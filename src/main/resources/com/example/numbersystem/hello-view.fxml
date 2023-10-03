@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="150.0" prefWidth="195.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.numbersystem.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Label prefHeight="18.0" prefWidth="150.0" text="Number System" />
+   <Separator prefWidth="200.0" />
+   <Label prefHeight="18.0" prefWidth="150.0" text="Binary" />
+   <TextField fx:id="binaryInput" onKeyReleased="#binaryInputOnKeyPressed" prefHeight="26.0" prefWidth="150.0" promptText="Enter Binary" />
+   <Label prefHeight="18.0" prefWidth="150.0" text="Octal" />
+   <TextField fx:id="octalInput" onKeyReleased="#octalInputOnKeyPressed" prefHeight="26.0" prefWidth="150.0" promptText="Enter Octal" />
+   <Label prefHeight="18.0" prefWidth="150.0" text="Decimal" />
+   <TextField fx:id="decimalInput" onKeyReleased="#decimalInputOnKeyPressed" prefHeight="26.0" prefWidth="150.0" promptText="Enter Decimal" />
+   <Label prefHeight="18.0" prefWidth="150.0" text="Hexadecimal" />
+   <TextField fx:id="hexadecimalInput" onKeyReleased="#hexadecimalInputOnKeyPressed" prefHeight="26.0" prefWidth="150.0" promptText="Enter Hexadecimal" />
+   <Separator prefWidth="200.0" />
+   <Button fx:id="resetButton" onAction="#clearOutputFields" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Reset" />
+</VBox>
